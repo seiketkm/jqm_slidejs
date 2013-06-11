@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.css" />
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.js"></script>
+    <!--
+	<link rel='stylesheet' href='//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css' />
+        <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="//code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    -->
+    <script src="jquery.slides.js"></script>
+    <script src="mycode.js"></script>
+    <link rel="stylesheet" href="mycss.css" />
+  </style>
+  </head>
+  <body>
+    <div data-role="page" id="main">
+      <div data-role="header" data-position="fixed">
+	<a href="#shakedMessage" data-role="button" data-rel="dialog" data-icon="home" data-tap-toggle="false" data-iconpos='notext'> </a>
+	<h1>WifiSpot</h1>
+	<button>OFF</button>
+      </div>
+      <div data-role="content">
+	<div id="coupon" class="slides">
+<!-- 	  <img src="img/320x240_1.gif"/> -->
+	  <a data-role="button" href="#shakedMessage" data-theme="a" data-corners="false" >クーポン1</a>
+	  <a data-role="button" href="#shakedMessage" data-theme="b" data-corners="false">会員限定2</a>
+	  <a data-role="button" href="#shakedMessage" data-theme="c" data-corners="false">いぬ</a>
+	  <a data-role="button" href="#shakedMessage" data-theme="e" data-corners="false">ねこ</a>
+	</div>
+	<div id="campaign" class="slides">
+	  <a href="#page1"><img src="img/320x240_1.gif"/></a>
+	  <a href="#page2"><img src="img/320x240_2.gif"/></a>
+	  <a href="#page3"><img src="img/320x240_3.gif"/></a>
+	</div>	
+      </div>
+      <div data-role="footer" data-position="fixed">
+	<div data-role="controlgroup" data-type="horizontal">
+	  <div data-role="button" data-icon="home" data-iconpos="notext"></div>
+	  <div data-role="button" data-icon="info" data-iconpos="notext"></div>
+	  <div data-role="button" data-icon="star" data-iconpos="notext"></div>
+	  <div data-role="button" data-icon="search" data-iconpos="notext"></div>
+	  <div data-role="button" data-icon="menu" data-iconpos="notext"></div>
+<!--  	  <div data-role="button">ホーム</div> -->
+<!-- 	  <div data-role="button">キャンペーン</div> -->
+<!-- 	  <div data-role="button">スタンプ</div> -->
+<!-- 	  <div data-role="button">店舗検索</div> -->
+<!-- 	  <div data-role="button">その他</div> -->
+	</div>
+      </div>
+    </div>
+    <div id="shakedMessage" data-role="dialog">
+      <div data-role="header">
+	<h3>header</h3>
+      </div>
+      <div data-role="content">
+	
+      </div>
+    </div>
+  </body>
+<html>
