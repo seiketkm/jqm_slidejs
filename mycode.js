@@ -21,6 +21,8 @@
       }
     });
     $('#campaign').slidesjs({
+      width: 320,
+      height:240,
       navigation: {
         active: false,
         effect:"slide"
