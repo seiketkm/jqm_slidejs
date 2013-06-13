@@ -20,7 +20,7 @@
           restartDelay:10000
         },
         pagination:{
-	  active: false
+	  active: true
         }
       })
     };
@@ -41,7 +41,7 @@
         restartDelay:10000
       },
       pagination:{
-	active: false
+	active: true
       }
     });
   });
