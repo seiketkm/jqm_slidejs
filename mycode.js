@@ -2,27 +2,31 @@
   (function init(){
   })();
   $(document).on('pageshow', '#main', function(){
-    $('#coupon').slidesjs({
-      navigation: {
-        active: false,
-        effect:"slide"
-      },
-      play: {
-	active: false,
-	effect: "slide",
-	interval: 3000,
-	auto: true,
-        swap: false,
-        pauseOnHover: true,
-        restartDelay:10000
-      },
-      pagination:{
-	active: false
-      }
-    });
+    if(!$('#coupon').children().hasClass("slidesjs-container")){
+      $('#coupon').slidesjs({
+        width: 320,
+	height: 60,
+        navigation: {
+          active: false,
+          effect:"slide"
+        },
+        play: {
+          active: false,
+          effect: "slide",
+          interval: 3000,
+	  auto: true,
+          swap: false,
+          pauseOnHover: true,
+          restartDelay:10000
+        },
+        pagination:{
+	  active: false
+        }
+      })
+    };
     $('#campaign').slidesjs({
-      width: 320,
-      height:240,
+      width: 330,
+      height: 250,
       navigation: {
         active: false,
         effect:"slide"
